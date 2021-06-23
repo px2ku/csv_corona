@@ -1,3 +1,4 @@
+/*
 package boran;
 
 import javafx.event.ActionEvent;
@@ -24,7 +25,9 @@ public class LineChart extends Application {
     //Zuhause nochmal FXtut durchgehen
 
     @Override
-    public void start(Stage primaryStage) /*throws Exception*/ {
+    public void start(Stage primaryStage) */
+/*throws Exception*//*
+ {
         List<LineChart.Data <Number,Number> data;
         data * List.of(
                 new LineChart.Data<> (1, 1)
@@ -46,17 +49,20 @@ public class LineChart extends Application {
 
         //TODO Try again Rambo
 
-        /*Parent root = FXMLoader.load(getClass().getResource("sample.fxml"));
+        */
+/*Parent root = FXMLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Test");
         primaryStage.setScene(new Scene (root, 300, 275));
         primaryStage.show();
-         */
+         *//*
+
 
     }
 
 }
 
-/*
+
+
 
 TODO
     Important links for leanring at home:
@@ -71,8 +77,5 @@ TODO
 
     Downloader for the CSV:
 
+*/
 
-
-
-
- */

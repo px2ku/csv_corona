@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -10,16 +13,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b53e440-60ef-4a42-959c-b064909e3397" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/GraphFX/Data/Mappe1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphFX/src/boran/DownloadCSV.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphFX/src/boran/LineChart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphFX/src/boran/Main.java" beforeDir="false" />
-    </list>
+    <list default="true" id="8b53e440-60ef-4a42-959c-b064909e3397" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/GraphFX" />
@@ -40,12 +58,56 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Boran Özalp\Documents\Programmieren\coronaGraphCSV" />
       <recent name="C:\Users\Boran Özalp\Documents\Programmieren\coronaGraphCSV\src\main\java" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.DownloadCSV">
+    <configuration name="DownloadCSV" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boran.DownloadCSV" />
+      <module name="coronaGraphCSV.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="boran.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="coronaGraphCSV [run]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.coronaGraphCSV [run]" />
+      <item itemvalue="Application.DownloadCSV" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DownloadCSV" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -70,9 +132,33 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1624483618591">
+    <state x="168" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624485694804">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
-    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup/62.0.1304.768@62.0.1304.768" timestamp="1624483618591" />
+    <state x="168" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1304.768@62.0.1304.768" timestamp="1624485694804" />
+    <state width="1261" height="192" key="GridCell.Tab.0.bottom" timestamp="1624486403146">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state width="1261" height="192" key="GridCell.Tab.0.bottom/62.0.1304.768@62.0.1304.768" timestamp="1624486403146" />
+    <state width="1261" height="192" key="GridCell.Tab.0.center" timestamp="1624486403146">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state width="1261" height="192" key="GridCell.Tab.0.center/62.0.1304.768@62.0.1304.768" timestamp="1624486403146" />
+    <state width="1261" height="192" key="GridCell.Tab.0.left" timestamp="1624486403146">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state width="1261" height="192" key="GridCell.Tab.0.left/62.0.1304.768@62.0.1304.768" timestamp="1624486403146" />
+    <state width="1261" height="192" key="GridCell.Tab.0.right" timestamp="1624486403146">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state width="1261" height="192" key="GridCell.Tab.0.right/62.0.1304.768@62.0.1304.768" timestamp="1624486403146" />
+    <state x="215" y="29" key="SettingsEditor" timestamp="1624485047258">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state x="215" y="29" key="SettingsEditor/62.0.1304.768@62.0.1304.768" timestamp="1624485047258" />
+    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1624486612512">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup/62.0.1304.768@62.0.1304.768" timestamp="1624486612512" />
   </component>
 </project>

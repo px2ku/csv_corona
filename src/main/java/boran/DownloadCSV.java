@@ -1,6 +1,7 @@
 package boran;
 
 import java.io.*;
+
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;
 
@@ -10,27 +11,22 @@ import java.util.Arrays;
 import java.util.List;
 
 import com.opencsv.stream.reader.LineReader;
-import jdk.internal.access.JavaIOFileDescriptorAccess.*;
-
 
 
 public class DownloadCSV {
-                public static void main(String[] args) {
-                    String dirName = "E:\\downloaded";
-                try {
-                    saveFileFromUrlWithJavaIO(
-                            dirName + "\\java_tutorial.png", "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Projekte_RKI/Nowcasting_Zahlen_csv.csv?__blob=publicationFile\n");
-                    System.out.println("finished");
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
+//                public static void main(String[] args) {
+//                    String dirName = "E:\\downloaded";
+//                try {
+//                    saveFileFromUrlWithJavaIO(
+//                            dirName + "\\java_tutorial.png", "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Projekte_RKI/Nowcasting_Zahlen_csv.csv?__blob=publicationFile\n");
+//                    System.out.println("finished");
+//                } catch (MalformedURLException e) {
+//                    e.printStackTrace();
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+
     private static BufferedReader Reader;
-
-
-
 
 
     // TODO: Der ink zur zum download der CSV date ist Hier:
@@ -46,7 +42,7 @@ public class DownloadCSV {
             Reader = new BufferedReader(new FileReader(file));
             //Regulars
 
-            while((line = Reader.readLine()) != null) {
+            while ((line = Reader.readLine()) != null) {
                 String[] row = line.split(";");
                 String LineReader;
 
@@ -61,7 +57,7 @@ public class DownloadCSV {
                     System.out.printf("%-10s \n \f", index);
                     */
 
-                    if (index % 10 == 9) {
+                    if (index.length() % 10 == 9) {
                         System.out.printf("\n");
                     }
 
@@ -78,7 +74,9 @@ public class DownloadCSV {
             // Just in case not necessary
         } finally {
             try {
-                reader.close();
+                if (reader != null) {
+                    reader.close();
+                }
             } catch (IOException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
