@@ -12,9 +12,25 @@ import java.util.List;
 import com.opencsv.stream.reader.LineReader;
 import jdk.internal.access.JavaIOFileDescriptorAccess.*;
 
-public class
-DownloadCSV {
+
+
+public class DownloadCSV {
+                public static void main(String[] args) {
+                    String dirName = "E:\\downloaded";
+                try {
+                    saveFileFromUrlWithJavaIO(
+                            dirName + "\\java_tutorial.png", "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Projekte_RKI/Nowcasting_Zahlen_csv.csv?__blob=publicationFile\n");
+                    System.out.println("finished");
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
     private static BufferedReader Reader;
+
+
+
 
 
     // TODO: Der ink zur zum download der CSV date ist Hier:

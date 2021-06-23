@@ -7,21 +7,23 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import org.apache.commons.io.FileUtils;
 
-public class Download_URL {
+public class Main {
     public static void main(String[] args) {
-        // Make sure that this directory exists
-        String dirName = "E:\\downloaded";
-        try {
-            saveFileFromUrlWithJavaIO(
-                dirName + "\\java_tutorial.png", "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Projekte_RKI/Nowcasting_Zahlen_csv.csv?__blob=publicationFile\n");
-            System.out.println("finished");
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-    // Using Java IO
+        /*        String dirName = "E:\\downloaded";
+                    try {
+                        saveFileFromUrlWithJavaIO(
+                                dirName + "\\java_tutorial.png", "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Projekte_RKI/Nowcasting_Zahlen_csv.csv?__blob=publicationFile\n");
+                        System.out.println("finished");
+
+                    } catch (MalformedURLException e) {
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+        }*/
+
+
     public static void saveFileFromUrlWithJavaIO(String fileName, String fileUrl)
     throws MalformedURLException, IOException {
         BufferedInputStream in = null;
