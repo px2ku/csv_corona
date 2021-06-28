@@ -27,7 +27,7 @@ public class CsvReader {
 
                 if (filteredLine != null) {
                     dataPoints.add(filteredLine);
-                    System.out.println(filteredLine);
+//                    System.out.println(filteredLine);
                 }
 
             }

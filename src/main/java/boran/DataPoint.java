@@ -7,8 +7,6 @@ public record DataPoint(String date, int krankeLeute){
 
     public static DataPoint readLine(String line) {
 
-
-
         try {
             String date = line.split(";")[0];
             String krankeLeute = line.split(";")[2];

@@ -1,46 +1,51 @@
 package boran;
 
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.control.Label;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
-import org.apache.commons.lang3.ObjectUtils;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.Reader;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.List;
 
-public class Main {
+public class Main extends Application {
     public static final String csvURL = "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Projekte_RKI/Nowcasting_Zahlen_csv.csv?__blob=publicationFile";
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
-        System.out.println("test");
+        launch();
+
+    }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+
+        //Nochmal nachdenken
 
         FileDownloader downloader = new FileDownloader();
 
-
-
-
-        File csv = null;
-
-
         try {
-            csv = downloader.downloadFile(csvURL, "corona.csv");
+            File csv = downloader.downloadFile(csvURL, "corona.csv");
             CsvReader reader = new CsvReader(csv);
-            reader.readDataPoints();
+
+            List<DataPoint> all_data_in_datapoints = reader.readDataPoints();;
+
+            Graph graph = new Graph();
+            Scene scene = new Scene(graph.createGraph(all_data_in_datapoints), 640, 480);
+            primaryStage.setScene(scene);
+            primaryStage.show();
 
             //lines.forEach(System.out::println);
-
-
 
         } catch (IOException e) {
             e.printStackTrace();
             System.exit(1);
         }
 
-
-        //        https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Projekte_RKI/Nowcasting_Zahlen_csv.csv?__blob=publicationFile
     }
-
 }
