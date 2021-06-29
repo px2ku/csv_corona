@@ -20,7 +20,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation("org.jetbrains.kotlin:kotlin-test")
+
     implementation ("org.apache.commons:commons-lang3:3.12.0")
 }
 
